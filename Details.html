@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+         <meta name=" Roshani Ghimire" content="KIT502 Tutotial 2">
+         <!-- Bootstrap CSS-->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384- GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        
+         <!-- Bootstrap bundles-->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+         
+        <!-- External CSS file-->
+         <link rel="stylesheet" href="css/style.css">
+         
+         <!-- page title-->
+         <title>Details for Web Conference</title>
+
+    </head>
+
+  
+    <body>
+        <a name="top"></a>
+
+       <!-- navbar-->
+       <nav>
+        
+            <div class="logo">WD2024</div>
+                 <ul>
+                     <li><a href="index.html">Home</a></li>
+
+                     <li> <div class="container4">
+
+                         <!--Registration Modal-->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Registration </button>
+                    </div></li>
+
+                     <li><a href="Details.html">Details</a></li>
+                 </ul>
+            </div>
+       </nav>
+
+       <!-- Details about the Conference-->
+       <div class="line"></div>
+
+      
+
+     <div class="Container-fluid">
+                <div class="description">
+                    
+                    <h2> Details about the conference</h2><br> <br>
+                    
+                </div>
+             
+             </div>
+
+            <div class="line"></div>
+
+     <div class="Container-fluid">
+                <div class="conferenceDates">
+                    
+                    <h3> Conference Date: 22-24 September 2024</h3>
+                   <h4>Submission deadlines and page limits</h4>
+             
+                </div>
+             
+             </div>
+  
+             
+<!--table for pages & deadlines-->
+<div class="Container-fluid">
+    <div class="conferenceDetails">
+              <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th><b>Pages</b></th>
+                    <th><b>Deadline</b></th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paper</td>
+                        <td>6 pages plus 1 page for reference if required</td>
+                        <td>1 April</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Working Group</td>
+                        <td>2 pages</td>
+                        <td>1 April</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Poster</td>
+                        <td>1 pages</td>
+                        <td>15 June</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Doctoral Consortium</td>
+                        <td>2 pages</td>
+                        <td>15 June</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Tips, techniques & courseware</td>
+                        <td>2 pages</td>
+                        <td>15 June</td>
+                    </tr>
+                </tbody> 
+
+        </table>
+    </div>
+</div> 
+
+<!--table for contact addresses-->    
+            
+                <h3>Contact Addresses</h3>
+            
+ <div class="Container">   
+    <div class="contactDetails">
+
+            <table style>
+            
+                <tbody>
+                    <tr>
+                        <td><b>Conference Chairs</b> </td>
+                        <td>conferencechairs@conference.com</td>
+                    </tr>
+            
+                    <tr>
+                        <td><b>Organization</b></td>
+                        <td>Organisation@conference.com</td>
+                    </tr>
+                    <tr>
+                        <td><b>Support Liaison</b></td>
+                        <td>supportliaision@conference.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div> 
+   
+
+  
+       <!--footer-->
+<div class="Container-fluid">
+    <div class="left">  &copy; 2024 Web Development Conference; <a href="#">Privacy</a> <a href="#"> &middot;Terms </a> </div>
+
+    <div class="right">
+    <a href="#top">back to top</a>
+    </div>
+</div>
+
+
+<!--Registration Modal-->
+<!--Modal-->
+
+<div class="modal fade" id="registerModal" tabindex="-1"
+aria-labelledby="registerModalLabel" aria-hidden="true">
+
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h1 class="modal-title fs-5" id="registerModalLabel">Registration</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick=""></button>
+        </div>
+       
+       
+        <div class="modal-body">
+        <form action="#nowhere">
+            
+            <div class="mb-3">
+                
+                <label for="inputFirstName" class="form-label">First Name</label>
+                <input type="text"class="form-control" id="firstName" required>
+           
+                
+                <label for="inputLastName" class="form-label">Last Name</label>
+                <input type="text"class="form-control" id="lastName" required>
+           
+
+                <label for="inputEmail" class="form-label">Email Address</label>
+                <input type="email"class="form-control" id="email" aria-describedby="emailHelp" required>
+
+                <div id="emailHelp" class="form-text"> We'll never share your email with anyone else.
+                
+            </div>
+            
+            
+            <div class="mb-3">
+                <label for="inputPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" pattern="(?=.*[0-9])(?=.*[a-z]).{7,}" title="Password must contain 7 - 12 letters with at least one number"required>
+            </div>
+
+            <div class="mb-3 confirmPassword">
+                <label for="confirmPassword" class="form-label"> Confirm Password</label>
+                <input type="password" class="form-control" id="confimPassword"required>
+            </div>
+
+            <div class="mb-3 form-radio">
+                <label class="form-radio-label" for="check"> Are you a research student?</label>
+                <input type="radio" class="form-radio-input" name="yes" id="checkYes" required>
+                <label for="yes"> Yes &nbsp; </label>
+                <input type="radio" class="form-radio-input" name="no" id="checkNo">
+                <label for="no"> No </label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="check" required>
+                <label class="form-check-label" for="check"> I acknowledge that I have read and understood the terms and conditions.</label>
+            </div>
+
+            <button type="submit" class="btn btn-danger">Submit</button>
+
+        </form>
+
+        </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+
+            </div>
+         </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
